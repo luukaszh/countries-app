@@ -1,0 +1,24 @@
+a:hover{
+  opacity: 0.9;
+}
+
+.button-back{
+  position: absolute;
+  right: 1rem;
+}
+
+.logo{
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.3rem black;
+}
+
+.logo:hover{
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.mat-toolbar{
+  background: #8EE4AF;
+  box-shadow: 0 0 0.5rem black;
+}

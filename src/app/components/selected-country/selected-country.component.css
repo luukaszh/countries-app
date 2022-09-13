@@ -1,0 +1,27 @@
+img {
+  height:4rem;
+  width:6rem;
+  display: inline;
+  border-radius: 0.2rem;
+  box-shadow: 0 0 0.1rem black;
+  margin-right: 1rem;
+  margin-top: 0.3rem;
+  margin-left: 1rem;
+}
+
+p {
+  display: inline;
+  font-size: xx-large;
+  color: #0a4480;
+  margin-bottom: 0.2rem;
+  align-items: center;
+}
+
+li{
+  list-style-type: none;
+}
+
+.details{
+  margin-left: 1rem;
+  margin-top: 1rem;
+}

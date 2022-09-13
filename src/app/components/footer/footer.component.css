@@ -1,0 +1,19 @@
+footer{
+  background-color: #8EE4AF;
+  position: fixed;
+  height: 2.5rem;
+  box-shadow: 0 0 0.5rem black;
+  bottom: 0;
+  left: 0;
+  width: 100%
+}
+
+.button{
+  position: absolute;
+  right: 1rem;
+  margin-top: 0.1rem;
+}
+
+.button:hover{
+  opacity: 0.9;
+}
