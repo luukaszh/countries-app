@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
 import { Observable } from "rxjs";
 import { MatDialog } from "@angular/material/dialog";
-import { SelectedCountryComponent } from "../components/selected-country/selected-country.component";
+import { SelectedCountryComponent } from "../components/dialogs/selected-country/selected-country.component";
 
 @Injectable({
   providedIn: 'root'

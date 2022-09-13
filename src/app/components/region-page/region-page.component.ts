@@ -1,25 +1,34 @@
 import { Component, OnInit } from '@angular/core';
 import { CountriesService } from "../../services/countries.service";
 import { HttpClient } from "@angular/common/http";
+import { ActivatedRoute } from "@angular/router";
+
 
 @Component({
-  selector: 'app-oceania-page',
-  templateUrl: './oceania-page.component.html',
-  styleUrls: ['./oceania-page.component.css']
+  selector: 'app-region-page',
+  templateUrl: './region-page.component.html',
+  styleUrls: ['./region-page.component.css']
 })
-export class OceaniaPageComponent implements OnInit {
+export class RegionPageComponent implements OnInit {
 
   countriesList: any;
 
+  region!: { name: string };
+
   constructor(
     public countriesService: CountriesService,
-    public http: HttpClient
+    public http: HttpClient,
+    private activateRoute: ActivatedRoute,
   ) {
     this.countriesList = [];
   }
 
   ngOnInit(): void {
     this.getCountries()
+
+    this.region = {
+      name: this.activateRoute.snapshot.params['name']
+    }
   }
 
   getCountries(){

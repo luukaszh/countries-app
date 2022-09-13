@@ -3,43 +3,11 @@
 </div>
 
 <ul>
-  <li>
+  <li *ngFor="let region of regionList">
     <a>
-      <img routerLink="africa" src="assets/img/africa.jpg" alt="">
+      <img routerLink="{{ region }}" src="assets/img/{{ region }}.jpg" alt="{{ region }}">
       <div class="name">
-        Africa
-      </div>
-    </a>
-  </li>
-  <li>
-    <a>
-      <img routerLink="america" src="assets/img/america.jpg" alt="">
-      <div class="name">
-        Americas
-      </div>
-    </a>
-  </li>
-  <li>
-    <a>
-      <img routerLink="asia" src="assets/img/asia.jpg" alt="">
-      <div class="name">
-        Asia
-      </div>
-    </a>
-  </li>
-  <li>
-    <a>
-      <img routerLink="europe" src="assets/img/europe.jpg" alt="">
-      <div class="name">
-        Europe
-      </div>
-    </a>
-  </li>
-  <li>
-    <a>
-      <img routerLink="oceania" src="assets/img/oceania.jpg" alt="">
-      <div class="name">
-        Oceania
+        {{ region }}
       </div>
     </a>
   </li>

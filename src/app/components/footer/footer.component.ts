@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from "@angular/material/dialog";
-import { AboutMeComponent } from "../about-me/about-me.component";
+import { AboutMeComponent } from "../dialogs/about-me/about-me.component";
 
 @Component({
   selector: 'app-footer',

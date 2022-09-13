@@ -7,19 +7,15 @@ import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatButtonModule } from "@angular/material/button";
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
-import { AfricaPageComponent } from './components/africa-page/africa-page.component';
+import { RegionPageComponent } from './components/region-page/region-page.component';
 import { AppRoutingModule } from './app-routing.module';
 import { RouterModule } from "@angular/router";
-import { AmericaPageComponent } from './components/america-page/america-page.component';
-import { AsiaPageComponent } from './components/asia-page/asia-page.component';
-import { EuropePageComponent } from './components/europe-page/europe-page.component';
-import { OceaniaPageComponent } from './components/oceania-page/oceania-page.component';
 import { HttpClientModule } from "@angular/common/http";
 import { MatListModule } from "@angular/material/list";
 import { ScrollingModule } from "@angular/cdk/scrolling";
-import { AboutMeComponent } from './components/about-me/about-me.component';
+import { AboutMeComponent } from './components/dialogs/about-me/about-me.component';
 import { MatDialogModule } from "@angular/material/dialog";
-import { SelectedCountryComponent } from './components/selected-country/selected-country.component';
+import { SelectedCountryComponent } from './components/dialogs/selected-country/selected-country.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 @NgModule({
@@ -28,11 +24,7 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    AfricaPageComponent,
-    AmericaPageComponent,
-    AsiaPageComponent,
-    EuropePageComponent,
-    OceaniaPageComponent,
+    RegionPageComponent,
     AboutMeComponent,
     SelectedCountryComponent,
     PageNotFoundComponent,
